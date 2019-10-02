@@ -1,15 +1,6 @@
 'use strict';
 
-// const rootCas = require('ssl-root-cas/latest').create();
-
-// rootCas
-//   .addFile(__dirname + '/ssl/01-cheap-ssl-intermediary-a.pem')
-//   .addFile(__dirname + '/ssl/02-cheap-ssl-intermediary-b.pem');
-
-// require('https').globalAgent.options.ca = rootCas;
-
 const axios = require('axios');
-const fetch = require('node-fetch');
 
 const dataById = async () => {
   try {
