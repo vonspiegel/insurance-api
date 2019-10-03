@@ -8,11 +8,21 @@ const dataById = async () => {
       'http://www.mocky.io/v2/5808862710000087232b75ac'
     );
 
-    res.data;
-    console.log(res.data);
+    const clients = res.data.clients;
+    const clientId = clients.map(client => {
+      return client.id;
+    });
+
+    return clientId;
   } catch (error) {
-    console.log(error.message);
+    return error.message;
   }
 };
 
-dataById();
+dataById()
+  .then(message => {
+    console.log(message);
+  })
+  .catch(error => {
+    console.log(error);
+  });
