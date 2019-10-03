@@ -18,7 +18,7 @@ const dataId = async insertId => {
   }
 };
 
-dataId('2dbaac64-c13b-4d02-a980-e03627dee50d')
+dataId()
   .then(message => {
     console.log(message);
   })

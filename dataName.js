@@ -18,7 +18,7 @@ const dataName = async insertName => {
   }
 };
 
-dataName('Maxwell')
+dataName()
   .then(message => {
     console.log(message);
   })
