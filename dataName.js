@@ -11,7 +11,6 @@ const dataName = async insertName => {
     const clients = res.data.clients.filter(client => {
       return client.name === insertName;
     });
-
     return clients;
   } catch (error) {
     return error.message;
