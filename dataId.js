@@ -19,7 +19,7 @@ const dataId = async insertId => {
 };
 
 module.exports = {
-  dataId: dataId('a0ece5db-cd14-4f21-812f-966633e7be86')
+  dataId: dataId()
     .then(message => {
       console.log(message);
     })
