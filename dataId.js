@@ -18,10 +18,12 @@ const dataId = async insertId => {
   }
 };
 
-dataId()
-  .then(message => {
-    console.log(message);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+module.exports = {
+  dataId: dataId('a0ece5db-cd14-4f21-812f-966633e7be86')
+    .then(message => {
+      console.log(message);
+    })
+    .catch(error => {
+      console.log(error);
+    })
+};
